@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="btn_bg_en">#E3A7F1</color>
+    <color name="btn_bg_pressed">#FBAE7C</color>
+    <color name="btn_bg_unen">#484848</color>
+    <color name="score">#F6F680</color>
+    <color name="scorepressed">#F81945</color>
+</resources>

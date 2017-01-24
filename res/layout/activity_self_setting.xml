@@ -1,0 +1,182 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".SelfSettingActivity" >
+
+     <LinearLayout
+         android:id="@+id/ldetailtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+         <TextView
+             android:id="@+id/textView1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="30sp"
+             android:text="@string/selfDetail"
+             android:textColor="#eeee11"
+             />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/lclassName"
+        android:layout_marginTop="5dp"
+         android:layout_below="@+id/ldetailtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#22ff69"
+            android:text="@string/className" />
+
+        <TextView
+           android:id="@+id/tvclassName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:textSize="20sp"
+              android:textColor="#fff"
+            android:text="@string/devClass"
+          
+         />
+       
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/luserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lclassName"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:textSize="20sp"
+              android:textColor="#22ff69"
+            android:text="@string/userName" />
+
+        <TextView
+             android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+              android:textSize="20sp"
+              android:text="@string/devName"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lsex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/luserName"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/edSex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/sex" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lsex"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/edtall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/tall" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lfat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lHeight"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/edfat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/fat" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lsetpGoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lfat"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/editText6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+			android:layout_weight="2"
+			android:textSize="20sp"
+			android:textColor="#ff1111"
+            android:text="@string/setpGoal" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:textColor="#ff1111"
+            android:text="@string/defaultstep" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lselfgoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lsetpGoal"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/etSelfGoal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/selfStepGoal"
+            android:ems="10" >
+        </EditText>
+
+    </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnSelfSettingSure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lselfgoal"
+            android:text="@string/sure" />
+    
+
+</RelativeLayout>

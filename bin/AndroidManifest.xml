@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.buu.buustepcounter"
+    android:versionCode="1"
+    android:versionName="1.0" >
+<!-- 27309b1aab8bcbeeb6e21f0b1bd88860 -->
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appico"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".StepCounter"
+            android:launchMode="singleTask"
+            android:label="@string/title_activity_step_counter" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".regist.RegistActivity"
+            android:label="@string/title_activity_regist" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".login.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".selfsetting.SelfSettingActivity"
+            android:label="@string/title_activity_self_setting" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".setpCount.SetpTodayActivity"
+            android:label="@string/title_activity_setp_today"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".setting.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service android:name="com.buu.buustepcounter.StepCounterService" />
+    </application>
+
+</manifest>

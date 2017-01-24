@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/runner" >
+
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:text="@string/app_name"
+        android:textColor="#ff00ff"
+        android:textSize="30sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+         >
+
+         <RadioButton
+            android:id="@+id/rbLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:checked="true"
+            android:text="@string/login" />
+         
+        <RadioButton
+            android:id="@+id/rbRegist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:textSize="30sp"
+            android:text="@string/regist" />
+        
+        <RadioButton
+            android:id="@+id/rbVisitor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:textSize="30sp"
+            android:text="@string/visitor" />
+
+       
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnIn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/sure" />
+
+</RelativeLayout>
